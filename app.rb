@@ -15,9 +15,9 @@ class App < Sinatra::Base
     # @checkout = Checkout.new
     # @checkout.item = params[:item]
 
-    @session = session
-    @session[:item] = params[:item]
 
+    @session[:item] = params[:item]
+    @session = session
     erb :checkout
   end
 
